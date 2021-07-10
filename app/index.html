@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madness store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="illustration__space-1"></div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="menu">
+            <!-- <div class="menu__button"> -->
+            <div class="menu__title">Menu</div>
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__switch" for="menu__toggle">
+              <!-- <span class="menu__slider round" ></span> -->
+              <span class="slider round"></span>
+            </label>
+            <!-- </div> -->
+            <ul class="menu__list">
+              <li><a class="menu__item" href="#about">Pro нас</a></li>
+              <li><a class="menu__item" href="#collection">Каталог</a></li>
+              <li><a class="menu__item" href="#delivery">Dоставка</a></li>
+              <li><a class="menu__item" href="#contacs">Контакти</a></li>
+              <!-- space for other list items -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="top">
+        <div class="container">
+          <div class="illustration__space-2"></div>
+          <div class="top__first-inner">
+            <div class="top__order-button">
+              <button>Оформити замовлення</button>
+            </div>
+            <div class="top__slogan">
+              <h1>Madnass</h1>
+            </div>
+          </div>
+          <div class="illustration__picture-box">
+            <nav class="illustration__picture-mash"></nav>
+            <nav class="illustration__picture-lines"></nav>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__title">
+              <h2>Чому Madness?</h2>
+            </div>
+            <div class="about__constructor">
+              <img class="about__pictures-1" src="./images/1.jpg" width="170" height="200" alt="">
+              <img class="about__pictures-2" src="./images/2.jpg" width="170" height="190" alt="">
+              <img class="about__pictures-3" src="./images/3.jpg" width="170" height="190" alt="">
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consequatur harum quibusdam nostrum
+              dicta earum, enim quisquam possimus nobis natus ipsum dolore illum aspernatur adipisci.</p>
+          </div>
+        </div>
+      </section>
+      <div class="illustration__space-3"></div>
+      <section class="collection" id="collection">
+        <div class="container-fluide">
+          <div class="collection__inner">
+            <div class="collection__product-box">
+              <div class="collection__slider">
+                <div class="collection__slider-item"><img src="./images/prod_1.png" height="685" width="auto"
+                    alt="prod_1"></div>
+                <div class="collection__slider-item"><img src="./images/prod_2.png" height="685" width="auto"
+                    alt="prod_2"></div>
+                <div class="collection__slider-item"><img src="./images/prod_3.png" height="685" width="auto"
+                    alt="prod_3"></div>
+                <div class="collection__slider-item"><img src="./images/prod_4.png" height="685" width="auto"
+                    alt="prod_4"></div>
+              </div>
+            </div>
+            <nav class="collection__order-button-box">
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </nav>
+            <button class="collection__red-button">ПРИDБАТИ</button>
+          </div>
+        </div>
+      </section>
+      <section class="delivery" id="delivery">
+        <div class="container">
+          <div class="delivery__inner">
+            <h6>Умови доставки</h6>
+            <div class="delivery__steps">
+              <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam architecto in, quo eveniet optio fugit
+                nobis tenetur tempore aliquid </p>
+              <p>2. a quaerat minima esse natus? Hic odit magnam voluptatem eos ad. optio fugit nobis tenetur tempore
+                aliquid</p>
+              <p>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam architecto in, quo eveniet</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sale">
+        <div class="container">
+          <div class="sale__inner">
+            <h6>
+              SALEEEEE
+            </h6>
+            <div class="illustration__fire"></div>
+            <h6 class="sale__percents">
+              -50% на кожну третю одиницю
+            </h6>
+            <div class="sale__form">
+
+
+              <form id="phone-form">
+                <input type="hidden" name="project_name" value="Madness Store">
+                <input type="hidden" name="admin_email" value="unicorn100500@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Sale Block">
+                <label for="phone">Залиш контакти і ми звяжемось з тобою протягом дня</label>
+                <div class="sale__input-box">
+                  <input type="tel" id="phone" name="phone" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                  <button class="sale__input">></button>
+                </div>
+              </form>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__inner" id="contacs">
+            <div class="footer__info">
+              <h6 class="footer__info-title">
+                Зв'язатись з нами
+              </h6>
+              <p class="footer__info-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+              <div class="footer__mail-box">
+                <img src="./images/SVG/post.svg" width="40" height="40" alt="mail">
+                <a class="footer__info-email" href='#'>madness156709@gmail.com</a>
+              </div>
+
+
+              <form class="footer__form" id="email-form">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Madness Store">
+                <input type="hidden" name="admin_email" value="unicorn100500@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Footer">
+                <!-- END Hidden Required Fields -->
+                <input class="footer__form-input" name="E-mail" type="email"
+                  placeholder="Підписатися за допомогою email..." required>
+                <button class="footer__form-button" type="submit">></button>
+              </form>
+
+
+            </div>
+            <ul class="footer__social">
+              <li class="footer__social-item" id="telegram">
+                <a class="footer__social-link" href="#"><img src="./images/telegram.png" alt="tg_icon"></a>
+              </li>
+              <li class="footer__social-item" id="instagram">
+                <a class="footer__social-link" href="https://www.instagram.com/madnesscolorclothing/"><img
+                    src="./images/SVG/instagram_icon.svg" alt="insta_ic"></a>
+              </li>
+              <li class="footer__social-item" id="facebook">
+                <a class="footer__social-link" href="#"><img src="./images/SVG/fb_icon.svg" alt="fb_icon"></a>
+              </li>
+              <li class="footer__social-item" id="viber">
+                <a class="footer__social-link" href="#"><img src="./images/SVG/Viber_icon.svg" alt="viber_ic"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">© Madness store. 2021. We love our clients!</div>
+    </footer>
+  
+
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close"></a>
+          <div class="popup__title">Вкажи контактний номер</div>
+
+
+          <form id="phone">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Madness Store">
+            <input type="hidden" name="admin_email" value="unicorn100500@gmail.com">
+            <input type="hidden" name="form_subject" value="Form Popup">
+            <!-- END Hidden Required Fields -->
+            <input class="popup__form-input" name="Phone-popup" type="phone" placeholder="+380..." pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+            <div class="popup__text">Ми напишемо на Viber або затеефонуємо тобі</div>
+            <button class="popup__form-button" type="submit">Залишити запит</button>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+</div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

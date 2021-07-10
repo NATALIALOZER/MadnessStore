@@ -1,0 +1,58 @@
+html,
+body {
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: $default;
+}
+
+html { overflow-x: hidden; }
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-fluide{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 110px;
+}
+
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li{
+		margin: 0 15px;
+	}
+	button{
+		background-color: #fff;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		padding: 0;
+		font-size: 0;
+	}
+}
+
+
+
+
+
