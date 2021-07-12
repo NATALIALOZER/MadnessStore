@@ -17,7 +17,7 @@ $(function () {
 $(document).ready(function() {
 
   //Phone Ajax Send
-	$('#phone-form').submit(function() { //Change
+	$('.phone-form').submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",

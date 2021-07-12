@@ -167,7 +167,7 @@
         height: calc(100vh - 65px);
         // height: 100vh;
         width: 100%;
-        z-index: -1;
+        // z-index: -1;
         
         &__first-inner{
             
@@ -184,10 +184,11 @@
         &__order-button button{
             border: 0;
             background-color: #7933F5;
-            color: white;
             width: 265px;
-            height: 50px;  
- 
+            height: 50px;
+            a{
+                color: white;
+            }  
         }
         
         &__slogan h1{
@@ -302,6 +303,9 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 36px;
+            a{
+                color: white;
+            }
         }
 
         &__red-button:hover{
@@ -320,7 +324,7 @@
         height: 740px;
         top: -20%;
         right: 85%;
-        z-index: 0;
+        z-index: 1;
     }
     &__space-2{
         background-image:url(../images/Who.png);
@@ -330,7 +334,7 @@
         top: calc(100vh + 120px - 780px);
         width: 725px;
         height: 780px;
-        z-index: -1;
+        z-index: 1;
         opacity: 40%;
     }
 
@@ -563,6 +567,8 @@
     right: 0;
     left: 0;
     z-index: 111;
+    opacity: 0;
+    visibility: hidden;
     &__body{
         min-height: 100%;
         display: flex;
@@ -574,8 +580,15 @@
         background-color: #7933F5;
         color:#000000;
         padding: 50px 105px;
+        position: relative;
     }
-    // &__close{}
+    &__close{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 20px;
+        color: #C4C4C4;
+    }
 
 
     &__title{
@@ -612,4 +625,10 @@
         width: 190px;
     }
 }
+
+.popup:target{
+    opacity: 1;
+    visibility:visible;
+}
+
 @import 'media';
