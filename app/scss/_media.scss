@@ -333,6 +333,9 @@
             width: calc(320px - 30px);
             margin: 17px 0 0 0;
             position: relative;
+            .menu__list{
+                width: 100%;
+            }
         }
         .container{
             margin: 0;
@@ -351,9 +354,9 @@
     }
     .main{
         .top{
-            // background: white;
+            background: white;
             &__first-inner{
-                margin: 0;
+                margin: 20px 0 0 0;
                 padding: 0;
                 justify-content: center;
             }
@@ -396,8 +399,9 @@
                 }
                 #mobile-social-box{
                     display: flex;
-                    padding: 10px;
+                    padding: 0px;
                 }
+                
             }
             &__social{
                 display: flex;
@@ -447,16 +451,45 @@
             }
         }
         .collection{
-            &__order-button-box{
-                display: none;
+            height: 545px;
+            .container-fluide{
+                padding: 0;
             }
+            &__order-button-box{
+                width: 100%;
+                left: 0;
+                .yellow{
+                    width: 210px;
+                    height: 50px;
+                    margin: 0;
+                }
+                .green{
+                    width: 210px;
+                    height: 50px;
+                    margin-left: 10px;
+                    margin-top: -20px;
+                }
+            }
+            &__red-button{
+                margin-top: -200px;
+                margin-left: -300px;
+                width: 230px;
+                height: 100px;
+
+            }
+        }
+        .delivery{
+            margin-top: 300px;
         }
         .illustration{
             &__picture-mash{
                 // position: absolute;
+                background: url(../images/mashprod-mobile.jpg);
+                background-repeat:no-repeat;
+                background-size: contain;
+                display: block;
                 width: 290px;
                 height: 350px;
-                z-index: 0;
             }
             &__picture-box{
                 // position: absolute;
@@ -469,6 +502,19 @@
             display: none;
             width: 10px;
             height: 10px;
+        }
+        &__space-3{
+            display: none;
+        }
+        &__space-3-mobile{
+            background-image: url(../images/space-3-mobile.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 140px;
+            height: 375px;
+            position: absolute;
+            right: 0;
+            margin-top: -140px;
         }
         
     }
