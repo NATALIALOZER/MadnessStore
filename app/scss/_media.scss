@@ -13,6 +13,9 @@
 }
 
 @media (max-width: 885px){
+    .illustration__space-2 {
+        display: none;
+    }
     .main{
         .illustration{
             &__picture-box{
@@ -64,7 +67,7 @@
     }
 }
 
-@media (max-width: 770px){
+@media (max-width: 768px){
     .main{
         .illustration{
             &__picture-box{
@@ -312,12 +315,67 @@
 
 
 
+// For devices
 
+// iPad Pro в portrait & landscape
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2){
+    html, body {
+        /* Убирает прокрутку по горизонтале, для мобильной версии */
+        overflow-x: hidden;
+    }
 
-@media (max-width: 320px){
+    .illustration__space-2 {
+        z-index: -1;
+    }
+    .main{
+        .illustration{
+            &__picture-mash{
+                background-repeat:no-repeat;
+                height: auto;
+                margin-right: 0;
+            }
+            &__picture-box{
+                margin: 0 0 0 25%;
+            }
+        }
+        .about__inner{
+            margin-top: 100px;
+        }
+        .collection{
+            &__order-button-box{
+                display: none;
+            }
+            
+        }
+        .illustration__space-3 {
+            display: none;
+        }
+    }
+    
+}
+
+// iPad в portrait & landscape
+@media only screen
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    html, body {
+        /* Убирает прокрутку по горизонтале, для мобильной версии */
+        overflow-x: hidden;
+    }
+
+    .illustration{
+        &__space-2{
+            display: none;
+        }
+        &__space-1{
+            left: -330px;
+            top: -40px;
+            opacity: 90%;
+        }
+    }
     .header{
         background: linear-gradient(96.95deg, #7933F5 14.07%, #7933F5 27.74%, #543E91 139.17%);
-        position: relative;
+        // position: relative;
         width: 100%;
         height: 60px;
         &__slogan-mobile{
@@ -330,16 +388,15 @@
             
         }
         &__inner{
-            width: calc(320px - 30px);
+            width: calc(100% - 30px);
             margin: 17px 0 0 0;
             position: relative;
             .menu__list{
                 width: 100%;
+                li:first-child{
+                    padding-top: 80px;
+                }
             }
-        }
-        .container{
-            margin: 0;
-            padding: 0 15px;
             .menu{
                 position: absolute;
                 right: 0;
@@ -350,12 +407,167 @@
                     display: none;
                 }
             }
-        }
+        }     
     }
     .main{
         .top{
+            
+            height: auto;
+        }
+        .illustration{
+            &__picture-box{
+                margin: 0 0 0 25%;
+            }
+        }
+        .about__inner{
+            margin-top: 100px;
+        }
+
+        .collection{
+            &__order-button-box{
+                display: none;
+            }
+            
+        }
+        .illustration__space-3 {
+            display: none;
+        }
+        
+    }
+}
+
+
+// iPhone 6s in portrait & landscape
+@media only screen 
+and (max-device-width : 736px) {
+    .illustration{
+        &__space-2, &__space-1, &__picture-lines{
+            display: none;
+            width: 1px;
+            height: 1px;
+        }
+    }
+
+
+
+    .main{
+        .top{
+            margin: 0;
+            padding: 0;
             background: white;
+            height: auto;
             &__first-inner{
+                margin-bottom: 0;
+                margin-left: 45%;
+                &__order-button{
+                    z-index: 111;
+                }
+            }
+            &__slogan h1{
+                left: 36%;
+            }
+        }
+
+        .about{
+            &__inner {
+                margin-top: 0;
+                p{
+                    margin-left: 0;
+                }
+            }
+            &__title{
+                h2{font-size: 60px;}
+            }
+        }
+
+        .illustration{
+            &__picture-mash{
+                // position: absolute;
+                // background: url(../images/mashprod-mobile.jpg);
+                background-repeat:no-repeat;
+                // width: 100%;
+                height: auto;
+                margin-right: 0;
+            }
+            &__picture-box{
+                margin: -200px 0 0 0;
+            }
+        }
+    }
+}
+
+// iPhone 6 in portrait & landscape
+@media only screen 
+and (max-device-width : 667px) {
+    html, body {
+        /* Убирает прокрутку по горизонтале, для мобильной версии */
+        overflow-x: hidden;
+    }
+
+
+}
+
+// iPhone 5 и 5S в portrait & landscape
+@media only screen 
+// and (min-device-width : 320px) 
+and (max-device-width : 568px){
+    body{
+        width: 100%;
+    }
+    .container{
+        margin: 0;
+        padding: 0 15px;
+        justify-content: center;
+
+    }
+
+    .header{
+        background: linear-gradient(96.95deg, #7933F5 14.07%, #7933F5 27.74%, #543E91 139.17%);
+        // position: relative;
+        width: 100%;
+        height: 60px;
+        &__slogan-mobile{
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            color: white;
+            line-height: 62px;
+            
+        }
+        &__inner{
+            width: calc(100% - 30px);
+            margin: 17px 0 0 0;
+            position: relative;
+            .menu__list{
+                width: 100%;
+            }
+            .menu{
+                position: absolute;
+                right: 0;
+                &__switch{
+                    margin: 0;
+                }
+                &__title{
+                    display: none;
+                }
+            }
+        }     
+    }
+
+    .main{
+        width: 100%;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        .top{
+            margin: 0;
+            padding: 0;
+            background: white;
+            height: auto;
+            
+            &__first-inner{
+                width: 100%;
                 margin: 20px 0 0 0;
                 padding: 0;
                 justify-content: center;
@@ -369,7 +581,6 @@
             #mobile-button{
                 display: block;
                 z-index: 1;
-                
             }
             &__order-button{
                 margin: -50px 0 0 0;
@@ -380,17 +591,21 @@
                 }    
             }
         }
+
         .about{
+            width: 100%;
+            position: relative;
             &__inner {
+                width: 100%;
                 margin-top: 20px;
                 padding: 0;
+                p{margin-left: 0;}
                 #deskcop-about{
                     display: none;
                 }
                 #mobile-about{
                     display: block;
-                    margin-right: 0;
-                    margin-left: 0;
+                    width: 100%;
                     text-align: end;
                     font-size: 18px;
                     font-weight: 500;
@@ -398,16 +613,12 @@
                     margin-top: 10px;
                 }
                 #mobile-social-box{
-                    display: flex;
                     padding: 0px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin: 35px 0 auto auto;
                 }
-                
-            }
-            &__social{
-                display: flex;
-                width: 355px;
-                justify-content: space-between;
-                margin: 35px 0 auto auto;
                 
             }
             &__social-item{
@@ -415,7 +626,7 @@
                 height: 60px;
                 padding: 10px;
                 list-style: none;
-                margin: 35px 5px;
+                margin: 35px auto;
             }
             //отклик при наведении
             &__social-item:hover{
@@ -435,29 +646,40 @@
             #viber{
                 background-color: #7933F5;
             }
-            &__copyright{
-                background-color: #543C7D;
-                color: #000000, 80%;
-                text-align: center;
-                padding: 2px 10px 3px;
-            }
-            
-            &__title{
-                font-size: 24px;
-            }
             &__constructor{
-                margin-right: 0;
-                margin-left: 0;
+                margin: 0;
+                justify-content: center;
+                width: 100%;
+                img{
+                    justify-self: center;
+                }
             }
         }
+
         .collection{
             height: 545px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
             .container-fluide{
                 padding: 0;
             }
+            &__product-box{
+                height: auto;
+                width: 100%;
+                z-index: 1;
+                margin-top: 20px;
+            }
+            &__inner{
+                flex-direction: column;
+            }
             &__order-button-box{
                 width: 100%;
+                height: auto;
+                display: flex;
                 left: 0;
+                flex-direction: column;
+                padding-left: 20%;
                 .yellow{
                     width: 210px;
                     height: 50px;
@@ -471,37 +693,55 @@
                 }
             }
             &__red-button{
-                margin-top: -200px;
-                margin-left: -300px;
+                margin-top: -800px;
+                margin-left: 50px;
                 width: 230px;
                 height: 100px;
 
             }
         }
+
         .delivery{
-            margin-top: 300px;
+            margin-top: 330px;
         }
+
+        .sale{
+            &__inner{
+                margin-top: 400px;
+            }
+            &__percents{
+                margin-top: 0;
+            }
+        }
+
         .illustration{
             &__picture-mash{
                 // position: absolute;
                 background: url(../images/mashprod-mobile.jpg);
-                background-repeat:no-repeat;
+                // background-repeat:no-repeat;
                 background-size: contain;
                 display: block;
-                width: 290px;
-                height: 350px;
+                width: 100%;
+                height: auto;
+                margin-right: 0;
             }
             &__picture-box{
                 // position: absolute;
                 margin: 15px 0 0 0;
+            }
+            &__fire{
+                background-size: contain;
+                width: 100%;
+                margin-top: -500px;
+                background-image: url(../images/SVG/fire2.svg);
             }
         }
     }
     .illustration{
         &__space-2, &__space-1, &__picture-lines{
             display: none;
-            width: 10px;
-            height: 10px;
+            width: 1px;
+            height: 1px;
         }
         &__space-3{
             display: none;
@@ -518,5 +758,31 @@
         }
         
     }
-        
+    .footer{
+        &__info{
+            width: 99%;
+        }
+        &__social{
+            width: 1%;
+        }
+        &__social-item{
+            display: none;
+        }
+    }
+    .popup{
+        &__body{
+            margin: 0;
+            padding: 0;
+        }
+        &__content{
+            height: 100vh;
+            padding: 50px 15px;
+            align-items: center;
+        }
+        &__close{
+            right:20px;
+        }
+    }
 }
+
+

@@ -469,12 +469,6 @@
 
 
 
-
-
-
-
-
-
 .footer{
     &__content{
         background-color: #C4C4C4;
@@ -484,7 +478,7 @@
         display: flex;
         justify-content: space-between;
     }
-    &__footer-info{
+    &__info{
         width: 540px;
     }
     &__info-title{
